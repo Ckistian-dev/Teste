@@ -3,84 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Preços - Sorveteria</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Cardápio de Sorvetes</title>
 </head>
 <body>
-    <h1>Tabela de Preços - Sorveteria</h1>
-    <table>
-        <tr>
-            <th>Produto</th>
-            <th>Preço (R$)</th>
-            <th>Tamanho</th>
-        </tr>
-        
-        <!-- Alterar os dados das linhas abaixo -->
-        <tr>
-            <td>Sorvete de Chocolate</td> <!-- Nome do produto -->
-            <td>12.5</td> <!-- Preço do produto -->
-            <td>500ml</td> <!-- Tamanho do produto -->
-        </tr>
-        <tr>
-            <td>Sorvete de Morango</td>
-            <td>11.0</td>
-            <td>500ml</td>
-        </tr>
-        <tr>
-            <td>Sorvete de Baunilha</td>
-            <td>10.5</td>
-            <td>500ml</td>
-        </tr>
-        <tr>
-            <td>Picolé de Frutas</td>
-            <td>7.0</td>
-            <td>Unidade</td>
-        </tr>
-        <tr>
-            <td>Picolé de Chocolate</td>
-            <td>8.5</td>
-            <td>Unidade</td>
-        </tr>
-        <tr>
-            <td>Casquinha Simples</td>
-            <td>4.0</td>
-            <td>Unidade</td>
-        </tr>
-        <tr>
-            <td>Milkshake de Chocolate</td>
-            <td>15.0</td>
-            <td>400ml</td>
-        </tr>
-        <tr>
-            <td>Milkshake de Morango</td>
-            <td>14.0</td>
-            <td>400ml</td>
-        </tr>
-        <tr>
-            <td>Sundae de Caramelo</td>
-            <td>18.0</td>
-            <td>400ml</td>
-        </tr>
-    </table>
+
+    <h1 id="titulo">Cardápio de Sorvetes e Produtos</h1>
     
-    <p>Para alterar os dados, basta editar o conteúdo entre as tags <strong>&lt;td&gt;</strong> nas linhas da tabela.</p>
+    <div id="produtos">
+        <div class="produto">
+            <span class="nome">Sorvete de Chocolate</span>
+            <span class="preco">12.5</span>
+            <span class="tamanho">500ml</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Sorvete de Morango</span>
+            <span class="preco">11.0</span>
+            <span class="tamanho">500ml</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Sorvete de Baunilha</span>
+            <span class="preco">10.5</span>
+            <span class="tamanho">500ml</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Picolé de Frutas</span>
+            <span class="preco">7.0</span>
+            <span class="tamanho">Unidade</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Picolé de Chocolate</span>
+            <span class="preco">8.5</span>
+            <span class="tamanho">Unidade</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Casquinha Simples</span>
+            <span class="preco">4.0</span>
+            <span class="tamanho">Unidade</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Milkshake de Chocolate</span>
+            <span class="preco">15.0</span>
+            <span class="tamanho">400ml</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Milkshake de Morango</span>
+            <span class="preco">14.0</span>
+            <span class="tamanho">400ml</span>
+        </div>
+        <div class="produto">
+            <span class="nome">Sundae de Caramelo</span>
+            <span class="preco">18.0</span>
+            <span class="tamanho">400ml</span>
+        </div>
+    </div>
+
 </body>
 </html>
