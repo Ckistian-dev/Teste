@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Preços - Sorveteria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Preços - Sorveteria</h1>
+
+    <!-- O conteúdo da tabela será gerado aqui -->
+    <div id="tabela-precos"></div>
+
+    <script>
+        // Função para gerar a tabela de preços
+        function gerarTabelaProdutos() {
+            const produtos = [
+                { nome: "Sorvete de Chocolate", preco: 12.5, tamanho: "500ml" },
+                { nome: "Sorvete de Morango", preco: 11.0, tamanho: "500ml" },
+                { nome: "Sorvete de Baunilha", preco: 10.5, tamanho: "500ml" },
+                { nome: "Picolé de Frutas", preco: 7.0, tamanho: "Unidade" },
+                { nome: "Picolé de Chocolate", preco: 8.5, tamanho: "Unidade" },
+                { nome: "Casquinha Simples", preco: 4.0, tamanho: "Unidade" },
+                { nome: "Milkshake de Chocolate", preco: 15.0, tamanho: "400ml" },
+                { nome: "Milkshake de Morango", preco: 14.0, tamanho: "400ml" },
+                { nome: "Sundae de Caramelo", preco: 18.0, tamanho: "400ml" }
+            ];
+
+            let tabelaHTML = "<table>";
+            tabelaHTML += "<tr><th>Produto</th><th>Preço (R$)</th><th>Tamanho</th></tr>";
+
+            // Criar as linhas da tabela com os dados dos produtos
+            for (let produto of produtos) {
+                tabelaHTML += `<tr>
+                                <td>${produto.nome}</td>
+                                <td>${produto.preco.toFixed(2)}</td>
+                                <td>${produto.tamanho}</td>
+                              </tr>`;
+            }
+
+            tabelaHTML += "</table>";
+
+            // Inserir a tabela gerada no div
+            document.getElementById("tabela-precos").innerHTML = tabelaHTML;
+        }
+
+        // Chamar a função para gerar a tabela assim que o site carregar
+        window.onload = gerarTabelaProdutos;
+    </script>
+</body>
+</html>
